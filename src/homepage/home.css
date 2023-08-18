@@ -1,0 +1,84 @@
+.mywork-doctor{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mywork{
+    padding: 40px;
+    text-align: center;
+}
+
+
+.mywork , .doctor{
+    width: 50%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.1rem;
+}
+.doctor-img {
+    width: 420px;
+    height: auto;
+  }
+
+
+  .mywork h2{
+    color: #90140b;
+    font-weight: 900;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .mywork h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(25, 25, 151);
+  }
+  .mywork p{
+    color: #c50d00a8;
+    font-size: 1.1rem;
+    font-weight: 200;
+  }
+
+  .start-btn{
+    color: #8b0b02;
+    border: 2px solid #8b0b02;
+    padding: 10px 40px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-top: 30px;
+  }
+  .start-btn:hover{
+    background-color: #8b0b02;
+    color: #fff;
+  }
+
+  @media screen and (max-width: 767px) {
+    .mywork-doctor {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+    }
+    .letstart{
+        margin-bottom: 10px;
+    }
+    .mywork , .doctor{
+        width: 100%;
+        height: 50%;
+    }
+  
+    .mywork {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .doctor-img {
+      width: 100%;
+      height: auto;
+    }
+  }
+   
