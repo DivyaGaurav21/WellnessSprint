@@ -13,6 +13,7 @@ const Navigation = () => {
                 <li><Link to="service">Services</Link></li>
                 <li><Link to='phone'>(+91) 933 480 2030</Link></li>
                 <li><Link id='ct' to="contact">Contact</Link></li>
+
             </ul>
         </nav>
     );

@@ -1,26 +1,68 @@
 /* WellnessResources.css */
 .wellness-resources {
-    margin-top: 20px;
+    /* margin-top: 5px; */
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    background-color: #f9f9f9;
+    /* background-color: #dcfffb; */
   }
   
-  .wellness-resources h2 {
+  /* .wellness-resources h2 {
     font-size: 1.5rem;
+    text-align: center;
     margin-bottom: 10px;
+    color:#d00e00;
+
+  } */
+  .wellness-title{
+    margin-bottom: 10px;
+    color: #d00e00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 5x;
   }
   
   .resource-list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 10px;
+display: flex;
+/* justify-content: space-around; */
+gap: 10px;
+justify-content: center;
+flex-wrap: wrap;
+align-items: center;
   }
   
-  .resource-card {
-    padding: 10px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
+  .resource-list img{
+    max-width: 110px;
+    height: 130px;
+    opacity: 0.5;
+    border-radius: 10px;
   }
+
+  .resource-list p{
+    position: absolute;
+    font-size: 15px;
+    color: rgb(174, 0, 0);
+    font-weight: 900;
+    top: 45%;
+    left: 15%;
+
+  }
+.outlet-section{
+height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  .resource-card {
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid #ba0c00;
+    position: relative;
+  }
+
+.resource-card:hover{
+  background-color: #bdfffb;
+}
   

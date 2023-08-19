@@ -1,23 +1,23 @@
 
 import React, { useState } from 'react';
-import './YogaChallenges.css'; // Import your custom CSS file
+import './YogaChallenges.css';
 
-const ExcerciseChallenges = () => {
+const YogaChallenges = () => {
     const [completedVideos, setCompletedVideos] = useState([]);
     const [points, setPoints] = useState(0);
 
     const yogaVideos = [
         {
-            title: 'Beginner Excercise - 1',
-            videoId: 'bO6NNfX_1ns',
+            title: 'Beginner Yoga Routine',
+            videoId: 'nQwKKCqkJxg',
         },
         {
-            title: 'Beginner Exercise - 2',
-            videoId: 'bO6NNfX_1ns',
+            title: 'Yoga for stomach',
+            videoId: '9MazN_6wdqI',
         },
         {
-            title: 'Intermediate Excercise',
-            videoId: 'bO6NNfX_1ns',
+            title: 'Yoga for BackPain',
+            videoId: '4E4hhHk8bLU',
         },
         // Add more video objects as needed
     ];
@@ -31,7 +31,7 @@ const ExcerciseChallenges = () => {
 
     return (
         <div className="yoga-container">
-            <h2>Excercise Videos</h2>
+            <h2>Yoga Videos</h2>
             <p>Points earned: {points}</p>
             <div className="yoga-video-list">
                 {yogaVideos.map((video, index) => (
@@ -46,7 +46,7 @@ const ExcerciseChallenges = () => {
                         ></iframe>
                         <button
                             className="complete-button"
-                            onClick={() => handleVideoCompletion(video.videoId, 10)}
+                            onClick={() => handleVideoCompletion(video.videoId, 10)} // 10 points for completing a video
                             disabled={completedVideos.includes(video.videoId)}
                         >
                             {completedVideos.includes(video.videoId) ? 'Completed' : 'Complete'}
@@ -58,4 +58,4 @@ const ExcerciseChallenges = () => {
     );
 };
 
-export default ExcerciseChallenges;
+export default YogaChallenges;
