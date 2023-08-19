@@ -1,8 +1,8 @@
 
 import React, { useState } from 'react';
-import './YogaChallenges.css'; // Import your custom CSS file
+import './YogaChallenges.css'; 
 
-const ExcerciseChallenges = () => {
+const ExcerciseChallenges = ({ completeChallenge }) => {
     const [completedVideos, setCompletedVideos] = useState([]);
     const [points, setPoints] = useState(0);
 
@@ -13,19 +13,19 @@ const ExcerciseChallenges = () => {
         },
         {
             title: 'Beginner Exercise - 2',
-            videoId: 'bO6NNfX_1ns',
+            videoId: 'Ir5hQvakCww',
         },
         {
             title: 'Intermediate Excercise',
-            videoId: 'bO6NNfX_1ns',
+            videoId: 'F1BBM5ZBILE',
         },
-        // Add more video objects as needed
     ];
 
     const handleVideoCompletion = (videoId, pointsToAdd) => {
         if (!completedVideos.includes(videoId)) {
             setCompletedVideos([...completedVideos, videoId]);
             setPoints(points + pointsToAdd);
+            completeChallenge(pointsToAdd);
         }
     };
 

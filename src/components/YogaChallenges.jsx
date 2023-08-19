@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import './YogaChallenges.css';
 
-const YogaChallenges = () => {
+const YogaChallenges = ({ completeChallenge }) => {
     const [completedVideos, setCompletedVideos] = useState([]);
     const [points, setPoints] = useState(0);
 
@@ -26,6 +26,7 @@ const YogaChallenges = () => {
         if (!completedVideos.includes(videoId)) {
             setCompletedVideos([...completedVideos, videoId]);
             setPoints(points + pointsToAdd);
+            completeChallenge(pointsToAdd);
         }
     };
 
